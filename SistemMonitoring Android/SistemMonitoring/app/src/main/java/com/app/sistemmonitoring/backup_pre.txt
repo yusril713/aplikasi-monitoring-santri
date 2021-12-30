@@ -1,0 +1,66 @@
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+
+# create stemmer
+factory = StemmerFactory()
+stemmer = factory.create_stemmer()
+
+# stemming process
+# sentence = 'Perekonomian Indonesia sedang dalam pertumbuhan yang membanggakan'
+# output   = stemmer.stem(sentence)
+
+# print(output)
+# ekonomi indonesia sedang dalam tumbuh yang bangga
+
+print(stemmer.stem(s))
+
+weeks = [g for n, g in data.groupby(pd.Grouper(key='Tanggal',freq='W'))]
+df = pd.DataFrame(data.groupby(pd.Grouper(key='Tanggal',freq='W'), as_index = False)['DataAsil'],columns=['Count'])
+
+weeks = [g for n, g in data.groupby(pd.Grouper(key='Tanggal',freq='W'), as_index=False)]
+finalTgl = []
+finalData = []
+for i in weeks:
+    for j in i['Tanggal']:
+        finalTgl.append(j)
+    finalTgl.append(0)
+    for j in i['DataAsli']:
+        finalData.append(j)
+    finalData.append(0)
+df = []
+col = 0
+temp = []
+for j in range(len(finalTgl)):
+    temp.append(finalTgl[j])
+    temp.append(finalData[j])
+    df.append(temp)
+    temp = []
+      
+dataframe = pd.DataFrame(df, columns =['Tanggal', 'Data'])  
+dataframe.to_excel('data.xlsx')
+import xlsxwriter
+
+new_list = [['first', 'second'], ['third', 'four'], [1, 2, 3, 4, 5, 6]]
+
+with xlsxwriter.Workbook('test.xlsx') as workbook:
+    worksheet = workbook.add_worksheet()
+
+    for row_num, data in enumerate(new_list):
+        worksheet.write_row(row_num, 0, data)
+	
+from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory, StopWordRemover, ArrayDictionary
+ 
+s = 'Aku pernah mendengar Aisya bercerita bahwa sebenarnya ia tidak terlalu senang dengan kabar perjodohan yang diatur oleh orang tuanya.'
+ 
+# Ambil Stopword bawaan
+stop_factory = StopWordRemoverFactory().get_stop_words()
+more_stopword = ['aku','diatur', 'perjodohan']
+ 
+# Merge stopword
+data = stop_factory + more_stopword
+ 
+dictionary = ArrayDictionary(data)
+str = StopWordRemover(dictionary)
+ 
+print(str.remove(s))
+ 
+# Aku mendengar Aisya bercerita senang kabar tuanya.

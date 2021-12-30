@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageDetailAbsensi"
+        android:layout_width="79dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvNamaDetailAbsensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageDetailAbsensi"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTanggaDetailAbsensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageDetailAbsensi"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaDetailAbsensi" />
+
+    <TextView
+        android:id="@+id/tvMapelDetailAbsensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageDetailAbsensi"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggaDetailAbsensi" />
+
+    <TextView
+        android:id="@+id/tvKeteranganDetailAbsensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageDetailAbsensi"
+        app:layout_constraintTop_toBottomOf="@+id/tvMapelDetailAbsensi" />
+</androidx.constraintlayout.widget.ConstraintLayout>

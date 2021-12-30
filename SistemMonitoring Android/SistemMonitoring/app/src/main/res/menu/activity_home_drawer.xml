@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Info Pesantren">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/visi_misi"
+                android:title="Kepala Pondok" />
+
+            <item
+                android:id="@+id/nav_sejarah"
+                android:icon="@drawable/sejarah"
+                android:title="Sejarah Pesantren"
+                />
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/visi_misi"
+                android:title="Visi dan Misi" />
+
+            <item
+                android:id="@+id/nav_pembina"
+                android:icon="@drawable/pembina"
+                android:title="Pembina"/>
+        </menu>
+    </item>
+    <item android:title="Tentang santri">
+        <menu>
+            <item
+                android:id="@+id/nav_tentang_santri"
+                android:icon="@drawable/info_santri"
+                android:title="Biodata Santri"
+                />
+            <item
+                android:id="@+id/nav_spp"
+                android:icon="@drawable/pembayaran"
+                android:title="SPP"
+                />
+            <item
+                android:id="@+id/nav_hafidz"
+                android:icon="@drawable/hafalan"
+                android:title="Hafalan Qur'an"
+                />
+            <item
+                android:id="@+id/nav_prestasi"
+                android:icon="@drawable/hafalan"
+                android:title="Prestasi"
+                />
+            <item
+                android:id="@+id/nav_pelanggaran"
+                android:icon="@drawable/pelanggaran"
+                android:title="Pelanggaran"
+                />
+        </menu>
+    </item>
+    <item android:title="Kegiatan Santri">
+        <menu>
+            <item
+                android:id="@+id/nav_notifikasi"
+                android:icon="@drawable/info_santri"
+                android:title="Notifikasi"
+                />
+            <item
+                android:id="@+id/nav_absensi"
+                android:icon="@drawable/absensi"
+                android:title="Presensi"
+                />
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+</menu>

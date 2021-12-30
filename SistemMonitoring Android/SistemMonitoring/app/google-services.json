@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "50648925293",
+    "firebase_url": "https://notif-ce99a.firebaseio.com",
+    "project_id": "notif-ce99a",
+    "storage_bucket": "notif-ce99a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50648925293:android:bb7d2ceaf4202ca68cab64",
+        "android_client_info": {
+          "package_name": "com.app.sistemmonitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50648925293-icvhks4ra9m9ntqdq733fp2k8qcdcbs2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.sistemmonitoring",
+            "certificate_hash": "a0639652fba90a0ad05fd0658de91a7d2f4a173c"
+          }
+        },
+        {
+          "client_id": "50648925293-pvkffeq900lan9pp8sssbfg8hs4c0abq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC92YjDURuwToeOy2PBNrpTPi7UzGxZYbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50648925293-pvkffeq900lan9pp8sssbfg8hs4c0abq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
